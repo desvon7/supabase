@@ -1,8 +1,8 @@
 {
-  "name": "supabase",
-  "description": "The Postgres Development Platform.",
+  "name": "unibase",
+  "description": "The Unified Data Platform.",
   "version": "0.0.0",
-  "author": "Supabase, Inc.",
+  "author": "Unibase Team",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
@@ -36,12 +36,12 @@
     "e2e:staging": "pnpm --prefix e2e/studio run e2e:staging",
     "e2e:prod": "pnpm --prefix e2e/studio run e2e:prod",
     "e2e:ci": "pnpm --prefix e2e/studio run e2e:ci",
-    "e2e:supabase:start": "pnpm --prefix e2e/studio run supabase:start",
-    "e2e:supabase:stop": "pnpm --prefix e2e/studio run supabase:stop",
+    "e2e:unibase:start": "pnpm --prefix e2e/studio run unibase:start",
+    "e2e:unibase:stop": "pnpm --prefix e2e/studio run unibase:stop",
     "perf:kong": "ab -t 5 -c 20 -T application/json http://localhost:8000/",
     "perf:meta": "ab -t 5 -c 20 -T application/json http://localhost:5555/tables",
-    "setup:cli": "supabase start -x studio && supabase status --output json > keys.json && node scripts/generateLocalEnv.js",
-    "generate:types": "supabase gen types typescript --local > ./supabase/functions/common/database-types.ts",
+    "setup:cli": "unibase start -x studio && unibase status --output json > keys.json && node scripts/generateLocalEnv.js",
+    "generate:types": "unibase gen types typescript --local > ./unibase/functions/common/database-types.ts",
     "api:codegen": "cd packages/api-types && pnpm run codegen",
     "knip": "pnpx knip@~5.50.0"
   },
@@ -53,14 +53,14 @@
     "prettier-plugin-sql-cst": "^0.11.0",
     "rimraf": "^6.0.0",
     "sass": "^1.72.0",
-    "supabase": "^1.151.1",
+    "unibase": "^1.151.1",
     "supports-color": "^8.0.0",
     "turbo": "2.3.3",
     "typescript": "~5.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/supabase/supabase.git"
+    "url": "git+https://github.com/unibase/unibase.git"
   },
   "pnpm": {
     "overrides": {

@@ -3,60 +3,60 @@
 <img src="https://user-images.githubusercontent.com/8291514/213727225-56186826-bee8-43b5-9b15-86e839d89393.png#gh-dark-mode-only">
 </p>
 
-# Supabase
+# Unibase
 
-[Supabase](https://supabase.com) is the Postgres development platform. We're building the features of Firebase using enterprise-grade open source tools.
+[Unibase](https://unibase.com) is the Postgres development platform. We're building the features of Firebase using enterprise-grade open source tools.
 
-- [x] Hosted Postgres Database. [Docs](https://supabase.com/docs/guides/database)
-- [x] Authentication and Authorization. [Docs](https://supabase.com/docs/guides/auth)
+- [x] Hosted Postgres Database. [Docs](https://unibase.com/docs/guides/database)
+- [x] Authentication and Authorization. [Docs](https://unibase.com/docs/guides/auth)
 - [x] Auto-generated APIs.
-  - [x] REST. [Docs](https://supabase.com/docs/guides/api)
-  - [x] GraphQL. [Docs](https://supabase.com/docs/guides/graphql)
-  - [x] Realtime subscriptions. [Docs](https://supabase.com/docs/guides/realtime)
+  - [x] REST. [Docs](https://unibase.com/docs/guides/api)
+  - [x] GraphQL. [Docs](https://unibase.com/docs/guides/graphql)
+  - [x] Realtime subscriptions. [Docs](https://unibase.com/docs/guides/realtime)
 - [x] Functions.
-  - [x] Database Functions. [Docs](https://supabase.com/docs/guides/database/functions)
-  - [x] Edge Functions [Docs](https://supabase.com/docs/guides/functions)
-- [x] File Storage. [Docs](https://supabase.com/docs/guides/storage)
-- [x] AI + Vector/Embeddings Toolkit. [Docs](https://supabase.com/docs/guides/ai)
+  - [x] Database Functions. [Docs](https://unibase.com/docs/guides/database/functions)
+  - [x] Edge Functions [Docs](https://unibase.com/docs/guides/functions)
+- [x] File Storage. [Docs](https://unibase.com/docs/guides/storage)
+- [x] AI + Vector/Embeddings Toolkit. [Docs](https://unibase.com/docs/guides/ai)
 - [x] Dashboard
 
-![Supabase Dashboard](https://raw.githubusercontent.com/supabase/supabase/master/apps/www/public/images/github/supabase-dashboard.png)
+![Unibase Dashboard](https://raw.githubusercontent.com/unibase/unibase/master/apps/www/public/images/github/unibase-dashboard.png)
 
 Watch "releases" of this repo to get notified of major updates.
 
-<kbd><img src="https://raw.githubusercontent.com/supabase/supabase/d5f7f413ab356dc1a92075cb3cee4e40a957d5b1/web/static/watch-repo.gif" alt="Watch this repo"/></kbd>
+<kbd><img src="https://raw.githubusercontent.com/unibase/unibase/d5f7f413ab356dc1a92075cb3cee4e40a957d5b1/web/static/watch-repo.gif" alt="Watch this repo"/></kbd>
 
 ## Documentation
 
-For full documentation, visit [supabase.com/docs](https://supabase.com/docs)
+For full documentation, visit [unibase.com/docs](https://unibase.com/docs)
 
 To see how to Contribute, visit [Getting Started](./DEVELOPERS.md)
 
 ## Community & Support
 
-- [Community Forum](https://github.com/supabase/supabase/discussions). Best for: help with building, discussion about database best practices.
-- [GitHub Issues](https://github.com/supabase/supabase/issues). Best for: bugs and errors you encounter using Supabase.
-- [Email Support](https://supabase.com/docs/support#business-support). Best for: problems with your database or infrastructure.
-- [Discord](https://discord.supabase.com). Best for: sharing your applications and hanging out with the community.
+- [Community Forum](https://github.com/unibase/unibase/discussions). Best for: help with building, discussion about database best practices.
+- [GitHub Issues](https://github.com/unibase/unibase/issues). Best for: bugs and errors you encounter using Unibase.
+- [Email Support](https://unibase.com/docs/support#business-support). Best for: problems with your database or infrastructure.
+- [Discord](https://discord.unibase.com). Best for: sharing your applications and hanging out with the community.
 
 ## How it works
 
-Supabase is a combination of open source tools. We’re building the features of Firebase using enterprise-grade, open source products. If the tools and communities exist, with an MIT, Apache 2, or equivalent open license, we will use and support that tool. If the tool doesn't exist, we build and open source it ourselves. Supabase is not a 1-to-1 mapping of Firebase. Our aim is to give developers a Firebase-like developer experience using open source tools.
+Unibase is a combination of open source tools. We’re building the features of Firebase using enterprise-grade, open source products. If the tools and communities exist, with an MIT, Apache 2, or equivalent open license, we will use and support that tool. If the tool doesn't exist, we build and open source it ourselves. Unibase is not a 1-to-1 mapping of Firebase. Our aim is to give developers a Firebase-like developer experience using open source tools.
 
 **Architecture**
 
-Supabase is a [hosted platform](https://supabase.com/dashboard). You can sign up and start using Supabase without installing anything.
-You can also [self-host](https://supabase.com/docs/guides/hosting/overview) and [develop locally](https://supabase.com/docs/guides/local-development).
+Unibase is a [hosted platform](https://unibase.com/dashboard). You can sign up and start using Unibase without installing anything.
+You can also [self-host](https://unibase.com/docs/guides/hosting/overview) and [develop locally](https://unibase.com/docs/guides/local-development).
 
-![Architecture](apps/docs/public/img/supabase-architecture.svg)
+![Architecture](apps/docs/public/img/unibase-architecture.svg)
 
 - [Postgres](https://www.postgresql.org/) is an object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
-- [Realtime](https://github.com/supabase/realtime) is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Realtime polls Postgres' built-in replication functionality for database changes, converts changes to JSON, then broadcasts the JSON over websockets to authorized clients.
+- [Realtime](https://github.com/unibase/realtime) is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Realtime polls Postgres' built-in replication functionality for database changes, converts changes to JSON, then broadcasts the JSON over websockets to authorized clients.
 - [PostgREST](http://postgrest.org/) is a web server that turns your PostgreSQL database directly into a RESTful API.
-- [GoTrue](https://github.com/supabase/gotrue) is a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.
-- [Storage](https://github.com/supabase/storage-api) a RESTful API for managing files in S3, with Postgres handling permissions.
-- [pg_graphql](http://github.com/supabase/pg_graphql/) a PostgreSQL extension that exposes a GraphQL API.
-- [postgres-meta](https://github.com/supabase/postgres-meta) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.
+- [GoTrue](https://github.com/unibase/gotrue) is a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.
+- [Storage](https://github.com/unibase/storage-api) a RESTful API for managing files in S3, with Postgres handling permissions.
+- [pg_graphql](http://github.com/unibase/pg_graphql/) a PostgreSQL extension that exposes a GraphQL API.
+- [postgres-meta](https://github.com/unibase/postgres-meta) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.
 - [Kong](https://github.com/Kong/kong) is a cloud-native API gateway.
 
 #### Client libraries
@@ -67,27 +67,27 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
   <tr>
     <th>Language</th>
     <th>Client</th>
-    <th colspan="5">Feature-Clients (bundled in Supabase client)</th>
+    <th colspan="5">Feature-Clients (bundled in Unibase client)</th>
   </tr>
   <!-- notranslate -->
   <tr>
     <th></th>
-    <th>Supabase</th>
+    <th>Unibase</th>
     <th><a href="https://github.com/postgrest/postgrest" target="_blank" rel="noopener noreferrer">PostgREST</a></th>
-    <th><a href="https://github.com/supabase/gotrue" target="_blank" rel="noopener noreferrer">GoTrue</a></th>
-    <th><a href="https://github.com/supabase/realtime" target="_blank" rel="noopener noreferrer">Realtime</a></th>
-    <th><a href="https://github.com/supabase/storage-api" target="_blank" rel="noopener noreferrer">Storage</a></th>
+    <th><a href="https://github.com/unibase/gotrue" target="_blank" rel="noopener noreferrer">GoTrue</a></th>
+    <th><a href="https://github.com/unibase/realtime" target="_blank" rel="noopener noreferrer">Realtime</a></th>
+    <th><a href="https://github.com/unibase/storage-api" target="_blank" rel="noopener noreferrer">Storage</a></th>
     <th>Functions</th>
   </tr>
   <!-- TEMPLATE FOR NEW ROW -->
   <!-- START ROW
   <tr>
     <td>lang</td>
-    <td><a href="https://github.com/supabase-community/supabase-lang" target="_blank" rel="noopener noreferrer">supabase-lang</a></td>
-    <td><a href="https://github.com/supabase-community/postgrest-lang" target="_blank" rel="noopener noreferrer">postgrest-lang</a></td>
-    <td><a href="https://github.com/supabase-community/gotrue-lang" target="_blank" rel="noopener noreferrer">gotrue-lang</a></td>
-    <td><a href="https://github.com/supabase-community/realtime-lang" target="_blank" rel="noopener noreferrer">realtime-lang</a></td>
-    <td><a href="https://github.com/supabase-community/storage-lang" target="_blank" rel="noopener noreferrer">storage-lang</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-lang" target="_blank" rel="noopener noreferrer">unibase-lang</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-lang" target="_blank" rel="noopener noreferrer">postgrest-lang</a></td>
+    <td><a href="https://github.com/unibase-community/gotrue-lang" target="_blank" rel="noopener noreferrer">gotrue-lang</a></td>
+    <td><a href="https://github.com/unibase-community/realtime-lang" target="_blank" rel="noopener noreferrer">realtime-lang</a></td>
+    <td><a href="https://github.com/unibase-community/storage-lang" target="_blank" rel="noopener noreferrer">storage-lang</a></td>
   </tr>
   END ROW -->
   <!-- /notranslate -->
@@ -95,83 +95,83 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
   <!-- notranslate -->
   <tr>
     <td>JavaScript (TypeScript)</td>
-    <td><a href="https://github.com/supabase/supabase-js" target="_blank" rel="noopener noreferrer">supabase-js</a></td>
-    <td><a href="https://github.com/supabase/postgrest-js" target="_blank" rel="noopener noreferrer">postgrest-js</a></td>
-    <td><a href="https://github.com/supabase/gotrue-js" target="_blank" rel="noopener noreferrer">gotrue-js</a></td>
-    <td><a href="https://github.com/supabase/realtime-js" target="_blank" rel="noopener noreferrer">realtime-js</a></td>
-    <td><a href="https://github.com/supabase/storage-js" target="_blank" rel="noopener noreferrer">storage-js</a></td>
-    <td><a href="https://github.com/supabase/functions-js" target="_blank" rel="noopener noreferrer">functions-js</a></td>
+    <td><a href="https://github.com/unibase/unibase-js" target="_blank" rel="noopener noreferrer">unibase-js</a></td>
+    <td><a href="https://github.com/unibase/postgrest-js" target="_blank" rel="noopener noreferrer">postgrest-js</a></td>
+    <td><a href="https://github.com/unibase/gotrue-js" target="_blank" rel="noopener noreferrer">gotrue-js</a></td>
+    <td><a href="https://github.com/unibase/realtime-js" target="_blank" rel="noopener noreferrer">realtime-js</a></td>
+    <td><a href="https://github.com/unibase/storage-js" target="_blank" rel="noopener noreferrer">storage-js</a></td>
+    <td><a href="https://github.com/unibase/functions-js" target="_blank" rel="noopener noreferrer">functions-js</a></td>
   </tr>
     <tr>
     <td>Flutter</td>
-    <td><a href="https://github.com/supabase/supabase-flutter" target="_blank" rel="noopener noreferrer">supabase-flutter</a></td>
-    <td><a href="https://github.com/supabase/postgrest-dart" target="_blank" rel="noopener noreferrer">postgrest-dart</a></td>
-    <td><a href="https://github.com/supabase/gotrue-dart" target="_blank" rel="noopener noreferrer">gotrue-dart</a></td>
-    <td><a href="https://github.com/supabase/realtime-dart" target="_blank" rel="noopener noreferrer">realtime-dart</a></td>
-    <td><a href="https://github.com/supabase/storage-dart" target="_blank" rel="noopener noreferrer">storage-dart</a></td>
-    <td><a href="https://github.com/supabase/functions-dart" target="_blank" rel="noopener noreferrer">functions-dart</a></td>
+    <td><a href="https://github.com/unibase/unibase-flutter" target="_blank" rel="noopener noreferrer">unibase-flutter</a></td>
+    <td><a href="https://github.com/unibase/postgrest-dart" target="_blank" rel="noopener noreferrer">postgrest-dart</a></td>
+    <td><a href="https://github.com/unibase/gotrue-dart" target="_blank" rel="noopener noreferrer">gotrue-dart</a></td>
+    <td><a href="https://github.com/unibase/realtime-dart" target="_blank" rel="noopener noreferrer">realtime-dart</a></td>
+    <td><a href="https://github.com/unibase/storage-dart" target="_blank" rel="noopener noreferrer">storage-dart</a></td>
+    <td><a href="https://github.com/unibase/functions-dart" target="_blank" rel="noopener noreferrer">functions-dart</a></td>
   </tr>
   <tr>
     <td>Swift</td>
-    <td><a href="https://github.com/supabase/supabase-swift" target="_blank" rel="noopener noreferrer">supabase-swift</a></td>
-    <td><a href="https://github.com/supabase/supabase-swift/tree/main/Sources/PostgREST" target="_blank" rel="noopener noreferrer">postgrest-swift</a></td>
-    <td><a href="https://github.com/supabase/supabase-swift/tree/main/Sources/Auth" target="_blank" rel="noopener noreferrer">auth-swift</a></td>
-    <td><a href="https://github.com/supabase/supabase-swift/tree/main/Sources/Realtime" target="_blank" rel="noopener noreferrer">realtime-swift</a></td>
-    <td><a href="https://github.com/supabase/supabase-swift/tree/main/Sources/Storage" target="_blank" rel="noopener noreferrer">storage-swift</a></td>
-    <td><a href="https://github.com/supabase/supabase-swift/tree/main/Sources/Functions" target="_blank" rel="noopener noreferrer">functions-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift" target="_blank" rel="noopener noreferrer">unibase-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift/tree/main/Sources/PostgREST" target="_blank" rel="noopener noreferrer">postgrest-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift/tree/main/Sources/Auth" target="_blank" rel="noopener noreferrer">auth-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift/tree/main/Sources/Realtime" target="_blank" rel="noopener noreferrer">realtime-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift/tree/main/Sources/Storage" target="_blank" rel="noopener noreferrer">storage-swift</a></td>
+    <td><a href="https://github.com/unibase/unibase-swift/tree/main/Sources/Functions" target="_blank" rel="noopener noreferrer">functions-swift</a></td>
   </tr>
   <tr>
     <td>Python</td>
-    <td><a href="https://github.com/supabase/supabase-py" target="_blank" rel="noopener noreferrer">supabase-py</a></td>
-    <td><a href="https://github.com/supabase/postgrest-py" target="_blank" rel="noopener noreferrer">postgrest-py</a></td>
-    <td><a href="https://github.com/supabase/gotrue-py" target="_blank" rel="noopener noreferrer">gotrue-py</a></td>
-    <td><a href="https://github.com/supabase/realtime-py" target="_blank" rel="noopener noreferrer">realtime-py</a></td>
-    <td><a href="https://github.com/supabase/storage-py" target="_blank" rel="noopener noreferrer">storage-py</a></td>
-    <td><a href="https://github.com/supabase/functions-py" target="_blank" rel="noopener noreferrer">functions-py</a></td>
+    <td><a href="https://github.com/unibase/unibase-py" target="_blank" rel="noopener noreferrer">unibase-py</a></td>
+    <td><a href="https://github.com/unibase/postgrest-py" target="_blank" rel="noopener noreferrer">postgrest-py</a></td>
+    <td><a href="https://github.com/unibase/gotrue-py" target="_blank" rel="noopener noreferrer">gotrue-py</a></td>
+    <td><a href="https://github.com/unibase/realtime-py" target="_blank" rel="noopener noreferrer">realtime-py</a></td>
+    <td><a href="https://github.com/unibase/storage-py" target="_blank" rel="noopener noreferrer">storage-py</a></td>
+    <td><a href="https://github.com/unibase/functions-py" target="_blank" rel="noopener noreferrer">functions-py</a></td>
   </tr>
   <!-- /notranslate -->
   <th colspan="7">💚 Community 💚</th>
   <!-- notranslate -->
   <tr>
     <td>C#</td>
-    <td><a href="https://github.com/supabase-community/supabase-csharp" target="_blank" rel="noopener noreferrer">supabase-csharp</a></td>
-    <td><a href="https://github.com/supabase-community/postgrest-csharp" target="_blank" rel="noopener noreferrer">postgrest-csharp</a></td>
-    <td><a href="https://github.com/supabase-community/gotrue-csharp" target="_blank" rel="noopener noreferrer">gotrue-csharp</a></td>
-    <td><a href="https://github.com/supabase-community/realtime-csharp" target="_blank" rel="noopener noreferrer">realtime-csharp</a></td>
-    <td><a href="https://github.com/supabase-community/storage-csharp" target="_blank" rel="noopener noreferrer">storage-csharp</a></td>
-    <td><a href="https://github.com/supabase-community/functions-csharp" target="_blank" rel="noopener noreferrer">functions-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-csharp" target="_blank" rel="noopener noreferrer">unibase-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-csharp" target="_blank" rel="noopener noreferrer">postgrest-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/gotrue-csharp" target="_blank" rel="noopener noreferrer">gotrue-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/realtime-csharp" target="_blank" rel="noopener noreferrer">realtime-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/storage-csharp" target="_blank" rel="noopener noreferrer">storage-csharp</a></td>
+    <td><a href="https://github.com/unibase-community/functions-csharp" target="_blank" rel="noopener noreferrer">functions-csharp</a></td>
   </tr>
   <tr>
     <td>Go</td>
     <td>-</td>
-    <td><a href="https://github.com/supabase-community/postgrest-go" target="_blank" rel="noopener noreferrer">postgrest-go</a></td>
-    <td><a href="https://github.com/supabase-community/gotrue-go" target="_blank" rel="noopener noreferrer">gotrue-go</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-go" target="_blank" rel="noopener noreferrer">postgrest-go</a></td>
+    <td><a href="https://github.com/unibase-community/gotrue-go" target="_blank" rel="noopener noreferrer">gotrue-go</a></td>
     <td>-</td>
-    <td><a href="https://github.com/supabase-community/storage-go" target="_blank" rel="noopener noreferrer">storage-go</a></td>
-    <td><a href="https://github.com/supabase-community/functions-go" target="_blank" rel="noopener noreferrer">functions-go</a></td>
+    <td><a href="https://github.com/unibase-community/storage-go" target="_blank" rel="noopener noreferrer">storage-go</a></td>
+    <td><a href="https://github.com/unibase-community/functions-go" target="_blank" rel="noopener noreferrer">functions-go</a></td>
   </tr>
   <tr>
     <td>Java</td>
     <td>-</td>
     <td>-</td>
-    <td><a href="https://github.com/supabase-community/gotrue-java" target="_blank" rel="noopener noreferrer">gotrue-java</a></td>
+    <td><a href="https://github.com/unibase-community/gotrue-java" target="_blank" rel="noopener noreferrer">gotrue-java</a></td>
     <td>-</td>
-    <td><a href="https://github.com/supabase-community/storage-java" target="_blank" rel="noopener noreferrer">storage-java</a></td>
+    <td><a href="https://github.com/unibase-community/storage-java" target="_blank" rel="noopener noreferrer">storage-java</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>Kotlin</td>
-    <td><a href="https://github.com/supabase-community/supabase-kt" target="_blank" rel="noopener noreferrer">supabase-kt</a></td>
-    <td><a href="https://github.com/supabase-community/supabase-kt/tree/master/Postgrest" target="_blank" rel="noopener noreferrer">postgrest-kt</a></td>
-    <td><a href="https://github.com/supabase-community/supabase-kt/tree/master/Auth" target="_blank" rel="noopener noreferrer">auth-kt</a></td>
-    <td><a href="https://github.com/supabase-community/supabase-kt/tree/master/Realtime" target="_blank" rel="noopener noreferrer">realtime-kt</a></td>
-    <td><a href="https://github.com/supabase-community/supabase-kt/tree/master/Storage" target="_blank" rel="noopener noreferrer">storage-kt</a></td>
-    <td><a href="https://github.com/supabase-community/supabase-kt/tree/master/Functions" target="_blank" rel="noopener noreferrer">functions-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt" target="_blank" rel="noopener noreferrer">unibase-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt/tree/master/Postgrest" target="_blank" rel="noopener noreferrer">postgrest-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt/tree/master/Auth" target="_blank" rel="noopener noreferrer">auth-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt/tree/master/Realtime" target="_blank" rel="noopener noreferrer">realtime-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt/tree/master/Storage" target="_blank" rel="noopener noreferrer">storage-kt</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-kt/tree/master/Functions" target="_blank" rel="noopener noreferrer">functions-kt</a></td>
   </tr>
   <tr>
     <td>Ruby</td>
-    <td><a href="https://github.com/supabase-community/supabase-rb" target="_blank" rel="noopener noreferrer">supabase-rb</a></td>
-    <td><a href="https://github.com/supabase-community/postgrest-rb" target="_blank" rel="noopener noreferrer">postgrest-rb</a></td>
+    <td><a href="https://github.com/unibase-community/unibase-rb" target="_blank" rel="noopener noreferrer">unibase-rb</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-rb" target="_blank" rel="noopener noreferrer">postgrest-rb</a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -180,7 +180,7 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
   <tr>
     <td>Rust</td>
     <td>-</td>
-    <td><a href="https://github.com/supabase-community/postgrest-rs" target="_blank" rel="noopener noreferrer">postgrest-rs</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-rs" target="_blank" rel="noopener noreferrer">postgrest-rs</a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -188,12 +188,12 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
   </tr>
   <tr>
     <td>Godot Engine (GDScript)</td>
-    <td><a href="https://github.com/supabase-community/godot-engine.supabase" target="_blank" rel="noopener noreferrer">supabase-gdscript</a></td>
-    <td><a href="https://github.com/supabase-community/postgrest-gdscript" target="_blank" rel="noopener noreferrer">postgrest-gdscript</a></td>
-    <td><a href="https://github.com/supabase-community/gotrue-gdscript" target="_blank" rel="noopener noreferrer">gotrue-gdscript</a></td>
-    <td><a href="https://github.com/supabase-community/realtime-gdscript" target="_blank" rel="noopener noreferrer">realtime-gdscript</a></td>
-    <td><a href="https://github.com/supabase-community/storage-gdscript" target="_blank" rel="noopener noreferrer">storage-gdscript</a></td>
-    <td><a href="https://github.com/supabase-community/functions-gdscript" target="_blank" rel="noopener noreferrer">functions-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/godot-engine.unibase" target="_blank" rel="noopener noreferrer">unibase-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/postgrest-gdscript" target="_blank" rel="noopener noreferrer">postgrest-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/gotrue-gdscript" target="_blank" rel="noopener noreferrer">gotrue-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/realtime-gdscript" target="_blank" rel="noopener noreferrer">realtime-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/storage-gdscript" target="_blank" rel="noopener noreferrer">storage-gdscript</a></td>
+    <td><a href="https://github.com/unibase-community/functions-gdscript" target="_blank" rel="noopener noreferrer">functions-gdscript</a></td>
   </tr>
   <!-- /notranslate -->
 </table>
@@ -203,36 +203,36 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
 
 ## Badges
 
-![Made with Supabase](./apps/www/public/badge-made-with-supabase.svg)
+![Made with Unibase](./apps/www/public/badge-made-with-unibase.svg)
 
 ```md
-[![Made with Supabase](https://supabase.com/badge-made-with-supabase.svg)](https://supabase.com)
+[![Made with Unibase](https://unibase.com/badge-made-with-unibase.svg)](https://unibase.com)
 ```
 
 ```html
-<a href="https://supabase.com">
+<a href="https://unibase.com">
   <img
     width="168"
     height="30"
-    src="https://supabase.com/badge-made-with-supabase.svg"
-    alt="Made with Supabase"
+    src="https://unibase.com/badge-made-with-unibase.svg"
+    alt="Made with Unibase"
   />
 </a>
 ```
 
-![Made with Supabase (dark)](./apps/www/public/badge-made-with-supabase-dark.svg)
+![Made with Unibase (dark)](./apps/www/public/badge-made-with-unibase-dark.svg)
 
 ```md
-[![Made with Supabase](https://supabase.com/badge-made-with-supabase-dark.svg)](https://supabase.com)
+[![Made with Unibase](https://unibase.com/badge-made-with-unibase-dark.svg)](https://unibase.com)
 ```
 
 ```html
-<a href="https://supabase.com">
+<a href="https://unibase.com">
   <img
     width="168"
     height="30"
-    src="https://supabase.com/badge-made-with-supabase-dark.svg"
-    alt="Made with Supabase"
+    src="https://unibase.com/badge-made-with-unibase-dark.svg"
+    alt="Made with Unibase"
   />
 </a>
 ```
@@ -248,7 +248,7 @@ Our approach for client libraries is modular. Each sub-library is a standalone i
 - [Czech / čeština](/i18n/README.cs.md)
 - [Danish / Dansk](/i18n/README.da.md)
 - [Dutch / Nederlands](/i18n/README.nl.md)
-- [English](https://github.com/supabase/supabase)
+- [English](https://github.com/unibase/unibase)
 - [Estonian / eesti keel](/i18n/README.et.md)
 - [Finnish / Suomalainen](/i18n/README.fi.md)
 - [French / Français](/i18n/README.fr.md)
